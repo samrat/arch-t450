@@ -11,4 +11,5 @@
       ;; Print screen
       '(Print . "scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/screenshots/'")
 
-      '(XF86LaunchA . "~/bin/batt-breakdown.sh")))
+      '(XF86LaunchA . "~/bin/batt-breakdown.sh")
+      '(XF86Explorer . "i3lock")))
