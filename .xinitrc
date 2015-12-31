@@ -48,7 +48,7 @@ setxkbmap -option caps:ctrl_modifier
 dropbox &
 xbindkeys
 redshift -l 18.5203:73.8567 & # Pune
-~/bin/low-battery-notify.sh &
+~/bin/low-battery-notify &
 ~/bin/dual-batt.sh &
 
 export TERMINAL=st
