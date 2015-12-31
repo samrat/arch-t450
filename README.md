@@ -5,8 +5,9 @@ T450. Right now, this is just a dump of most of the files that I've
 had to change to get things mostly working.
 
 - i3(with i3status)
-- dunst
 - xinitrc
+- dunst
+- ...and more.
 
-## TOD0
+## TODO
 - actually automate the setup using Ansible
