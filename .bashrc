@@ -5,22 +5,24 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+## Includes
+source ~/.bash_aliases
+
 PS1='[\u@\h \W]\$ '
 
-
-HISTSIZE=10000
+export HISTSIZE=10000
 
 # cd to directories faster
 . /home/samrat/code/z/z.sh
 
 eval `keychain --quiet --eval --agents ssh id_rsa`
 
-
 ## Options
 shopt -s globstar
 set +o histexpand
 
+## App options
+export LEDGER_FILE=~/code/ledger/.hledger.journal
 
 ## Environment
 _PS1() {
@@ -32,3 +34,6 @@ _PS1() {
 }
 export PS1='\[\e[1;32m\]\h\[\e[m\]\
 \[\e[1;35m\]$(_PS1 "$PWD" 30)\[\e[m\] '
+
+# Path
+export PATH=~/.local/bin:$PATH
