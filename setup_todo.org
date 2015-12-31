@@ -1,0 +1,15 @@
+* DONE i3status does not show correct battery level
+- https://josiah.wordpress.com/2015/01/29/making-i3status-work-with-multiple-batteries/
+* DONE volume/brightness controls not working
+- Used xbindkeys
+* DONE low-battery-notify
+- Need to modify script to handle the two batteries
+- Take an average?
+* TODO Tune palm detection
+- or maybe turn off trackpad completely?
+* TODO save all config files
+- i3(and i3status), dunst, xinitrc, shell scripts(~/bin), xbindkeys
+- push to git, create a separate repo called arch_t450
+- Don't push it to the dotfiles repo as a lot of things assume it's
+  running on this specific machine. It won't be as general but I want
+  these files to be there if I want to set this up again.
