@@ -21,7 +21,7 @@ do
 
         [ $battery_level -le $critical_level ] && \
             notify-send -u critical -i "$icon" -t 50 \
-                        "Battery level is low!" "Hibernating in 60 seconds" &&
+                        "Battery level is low!" "Suspending in 60 seconds" &&
             sleep 60 &&
             
             # suspend to RAM; let IRST suspend to disk
