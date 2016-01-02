@@ -23,7 +23,12 @@ do
             notify-send -u critical -i "$icon" -t 50 \
                         "Battery level is low!" "Hibernating in 60 seconds" &&
             sleep 60 &&
-            i3lock # TODO hibernate after this
+            
+            # suspend to RAM; let IRST suspend to disk
+            # NOTE: IRST won't know that you 
+            # ran out of battery. It'll still wait the same 
+            # amount of time before it goes to deep sleep.
+            i3lock && systemctl suspend
     fi
     sleep $interval
 done
