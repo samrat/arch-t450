@@ -13,7 +13,7 @@ PS1='[\u@\h \W]\$ '
 export HISTSIZE=10000
 
 # cd to directories faster
-. /home/samrat/code/z/z.sh
+. /home/samrat/bin/z/z.sh
 
 eval `keychain --quiet --eval --agents ssh id_rsa`
 
