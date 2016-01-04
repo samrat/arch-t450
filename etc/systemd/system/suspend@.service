@@ -1,0 +1,16 @@
+# i3lock before laptop gets suspended
+# https://wiki.archlinux.org/index.php/Power_management#Suspend.2Fresume_service_files
+
+[Unit]
+Description=User suspend actions
+Before=sleep.target
+
+[Service]
+User=%I
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/i3lock
+ExecStartPost=/usr/bin/sleep 1
+
+[Install]
+WantedBy=sleep.target
