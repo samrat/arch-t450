@@ -28,7 +28,7 @@ do
             # NOTE: IRST won't know that you 
             # ran out of battery. It'll still wait the same 
             # amount of time before it goes to deep sleep.
-            i3lock && systemctl suspend
+            systemctl suspend
     fi
     sleep $interval
 done
