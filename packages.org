@@ -1,0 +1,41 @@
+* Packages to install immediately after installation
+After installation, these are the first packages I install:
+
+#+BEGIN_SRC 
+sudo pacman -S xf86-video-intel xorg-server xorg-xinit xterm i3 keepassx
+#+END_SRC
+
+The next few ones are:
+
+#+BEGIN_SRC 
+sudo pacman -S firefox git emacs
+#+END_SRC
+
+Then,
+
+#+BEGIN_SRC
+tlp
+dmenu
+xbindkeys
+xorg-xbacklight
+alsa-utils
+networkmanager
+openssh
+keychain
+acpi
+dunst
+libnotify
+mlocate
+wget
+pmount
+thunar
+i3lock
+redshift
+powertop
+#+END_SRC
+
+Fonts:
+
+#+BEGIN_SRC 
+ttf-liberation ttf-dejavu ttf-inconsolata
+#+END_SRC
