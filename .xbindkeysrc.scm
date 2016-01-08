@@ -7,6 +7,7 @@
       '(XF86AudioRaiseVolume . "amixer set Master playback 2+")
       '(XF86AudioLowerVolume . "amixer set Master playback 2-")
       '(XF86AudioMute . "amixer set Master toggle")
+      '(XF86AudioMicMute . "amixer set Capture toggle")
       
       ;; Print screen
       '(Print . "scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/screenshots/'")
