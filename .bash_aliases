@@ -1,5 +1,6 @@
 alias ls='ls --color=auto'
 alias h='hledger'
+alias serve='python -m http.server'
 
 hcmit() {
     local hledger_file='.hledger.journal'
