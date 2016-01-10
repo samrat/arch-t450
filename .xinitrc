@@ -53,4 +53,7 @@ redshift -l 18.5203:73.8567 & # Pune
 
 export TERMINAL=st
 
+## set primary display, for i3 tray
+xrandr --output eDP1 --primary
+
 exec i3
