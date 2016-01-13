@@ -2,7 +2,7 @@
 
 # Configuration
 interval=120    #in seconds
-critical_level=8    #percent
+critical_level=5    #percent
 low_battery=10
 
 # TODO:
