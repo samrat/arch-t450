@@ -4,10 +4,12 @@
       '(XF86MonBrightnessUp . "xbacklight -inc 5")
       '(XF86MonBrightnessDown . "xbacklight -dec 5")
       ;; Volume
-      '(XF86AudioRaiseVolume . "amixer set Master playback 2+")
-      '(XF86AudioLowerVolume . "amixer set Master playback 2-")
-      '(XF86AudioMute . "amixer set Master toggle")
-      '(XF86AudioMicMute . "amixer set Capture toggle")
+      ;; NOTE: `pactl list sinks short` to find the sink id
+      '(XF86AudioRaiseVolume . "pactl set-sink-volume 1 +5%")
+      '(XF86AudioLowerVolume . "pactl set-sink-volume 1 -5%")
+      '(XF86AudioMute . "pactl set-sink-mute 1 toggle")
+      ;; `pactl list sources short` to find the source id
+      '(XF86AudioMicMute . "pactl set-source-mute 2 toggle")
       
       ;; Print screen
       '(Print . "scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/screenshots/'")
