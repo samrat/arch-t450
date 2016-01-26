@@ -12,7 +12,7 @@
       '(XF86AudioMicMute . "pactl set-source-mute 2 toggle")
       
       ;; Print screen
-      '(Print . "scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/screenshots/'")
+      '(Print . "scrot '%Y-%m-%d-%H%M%S_$wx$h.png' -e 'mv $f ~/screenshots/'")
 
       '(XF86LaunchA . "~/bin/batt-breakdown.sh")
       '((mod4 XF86Explorer) . "i3lock")
