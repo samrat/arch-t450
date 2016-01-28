@@ -1,8 +1,8 @@
 (map (lambda (binding) (xbindkey (car binding) (cdr binding)))
      (list
       ;; Brightness
-      '(XF86MonBrightnessUp . "xbacklight -inc 5")
-      '(XF86MonBrightnessDown . "xbacklight -dec 5")
+      '(XF86MonBrightnessUp . "xbacklight -inc 3")
+      '(XF86MonBrightnessDown . "xbacklight -dec 3")
       ;; Volume
       ;; NOTE: `pactl list sinks short` to find the sink id
       '(XF86AudioRaiseVolume . "pactl set-sink-volume 1 +5%")
