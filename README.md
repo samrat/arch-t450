@@ -9,5 +9,22 @@ had to change to get things mostly working.
 - dunst
 - ...and more.
 
+## Keyboard layout
+```
+thinkpad~ localectl status
+   System Locale: LANG=en_US.UTF-8
+       VC Keymap: us-acentos
+      X11 Layout: us
+       X11 Model: pc105
+     X11 Variant: ,us
+     X11 Options: caps:ctrl_modifier
+```
+
+Set using:
+
+```
+localectl set-x11-keymap us pc105 ,us caps:ctrl_modifier
+```
+
 ## TODO
 - actually automate the setup using Ansible
