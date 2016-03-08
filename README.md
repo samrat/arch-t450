@@ -25,6 +25,3 @@ Set using:
 ```
 localectl set-x11-keymap us pc105 ,us caps:ctrl_modifier
 ```
-
-## TODO
-- actually automate the setup using Ansible

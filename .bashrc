@@ -21,6 +21,9 @@ eval `keychain --quiet --eval --agents ssh id_rsa`
 shopt -s globstar
 set +o histexpand
 
+shopt -s histappend
+PROMPT_COMMAND='history -a;history -n'
+
 ## App options
 export LEDGER_FILE=~/code/ledger/.hledger.journal
 
@@ -37,3 +40,5 @@ export PS1='\[\e[1;32m\]\h\[\e[m\]\
 
 # Path
 export PATH=~/.local/bin:~/bin:$PATH
+
+eval `opam config env`
