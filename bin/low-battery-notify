@@ -16,7 +16,7 @@ do
         
         [ $battery_level -le $low_battery ] && \
             notify-send -u critical -i "$icon" -t 15000 \
-                        "Battery level is low!" "Only $battery_level% of the charge remains." &&
+                        "Battery level is low!" "Only $battery_level% remaining." &&
             sleep 60
 
         [ $battery_level -le $critical_level ] && \
