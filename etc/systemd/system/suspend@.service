@@ -9,6 +9,7 @@ Before=sleep.target
 User=%I
 Type=forking
 Environment=DISPLAY=:0
+# ExecStartPre= -/usr/bin/pkill -STOP vlc
 ExecStart=/usr/bin/i3lock
 ExecStartPost=/usr/bin/sleep 1
 
