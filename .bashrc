@@ -38,6 +38,8 @@ _PS1() {
 export PS1='\[\e[1;32m\]\h\[\e[m\]\
 \[\e[1;35m\]$(_PS1 "$PWD" 30)\[\e[m\] '
 
+export EDITOR=vim
+
 # Path
 export PATH=~/.local/bin:~/bin:$PATH
 
