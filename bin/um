@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec pmount /dev/disk/by-id/$(ls -Art /dev/disk/by-id/ | tail -n1) "$1"
