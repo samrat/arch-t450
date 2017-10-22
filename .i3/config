@@ -42,7 +42,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run
 
 # NetworkManager menu
-bindsym $mod+XF86Tools exec nmcli_dmenu
+bindsym $mod+XF86Tools exec networkmanager_dmenu
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
