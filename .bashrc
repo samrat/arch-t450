@@ -42,5 +42,6 @@ export EDITOR=vim
 
 # Path
 export PATH=~/.local/bin:~/bin:$PATH
+export PATH=$PATH:$(go env GOPATH)/bin
 
 eval `opam config env`
