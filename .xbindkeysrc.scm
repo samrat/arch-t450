@@ -5,8 +5,8 @@
       '(XF86MonBrightnessDown . "xbacklight -dec 3")
       ;; Volume
       ;; NOTE: `pactl list sinks short` to find the sink id
-      '(XF86AudioRaiseVolume . "pamixer --increase 5")
-      '(XF86AudioLowerVolume . "pamixer --decrease 5")
+      '(XF86AudioRaiseVolume . "pamixer --increase 5 --allow-boost")
+      '(XF86AudioLowerVolume . "pamixer --decrease 5 --allow-boost")
       '(XF86AudioMute . "pamixer -t")
       ;; `pactl list sources short` to find the source id
       '(XF86AudioMicMute . "pactl set-source-mute 1 toggle")
